@@ -4,7 +4,7 @@
  * even if it throws an exception.  If the callback returns a promise, the finally
  * function will only be called after the promise is complete, either when it is
  * resolved successfully or if it is rejected due to an exception.
- * @param workFn The function to call, which may or may not be an async funtion returning a promise
+ * @param workFn The function to call, which may or may not be an async function returning a promise
  * @param finallyFn_ToCallAfterWorkFnHasSucceededOrFailed The function to call after the callback completes (but not until after any
  * promise the callback returns has been resolved or rejected).
  * @returns The result of the callback function.
