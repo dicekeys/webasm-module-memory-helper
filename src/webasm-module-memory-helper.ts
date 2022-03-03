@@ -122,12 +122,12 @@ export function addTsMemoryToModule<MODULE extends EmscriptenModule, INTRA_MODUL
  */
 export const getWebAsmModulePromiseWithAugmentedTypes = <MODULE extends EmscriptenModule, PTR extends number>
   (
-    functionReturningASadAndBuggyExcuseForAModulePromise: () => {then: (callback: (module: MODULE) => unknown) => unknown}
+    aSadAndBuggyExcuseForAModulePromise: {then: (callback: (module: MODULE) => unknown) => unknown}
   ): Promise<MODULE & TypedMemoryHelpersForEmscriptenModule<PTR>> =>
     new Promise<MODULE & TypedMemoryHelpersForEmscriptenModule<PTR>> (
       (resolveModule, reject) => {
       try {
-        functionReturningASadAndBuggyExcuseForAModulePromise().then( (module: MODULE) => {
+        aSadAndBuggyExcuseForAModulePromise.then( (module: MODULE) => {
           // The good folks at emscripten didn't understand promises when they decided to make their
           // modules look kindof like promises to return modules and augmenting them with a .then()
           // method.  Alas, rather than the then() returning the module, the then() was just another

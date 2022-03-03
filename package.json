@@ -1,6 +1,6 @@
 {
   "name": "@dicekeys/webasm-module-memory-helper",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Helps TypeScript modules incorporate webasm modules",
   "main": "dist/webasm-module-memory-helper.js",
   "types": "dist/webasm-module-memory-helper.d.ts",
