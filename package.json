@@ -1,6 +1,6 @@
 {
   "name": "@dicekeys/webasm-module-memory-helper",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Helps TypeScript modules incorporate webasm modules",
   "main": "dist/webasm-module-memory-helper.js",
   "types": "dist/webasm-module-memory-helper.d.ts",
@@ -12,6 +12,9 @@
   "files": [
     "/dist"
   ],
+  "scripts": {
+    "publish-package": "npm publish --access public"
+  },
   "repository": "https://github.com/dicekeys/webasm-module-memory-helper.git",
   "author": "Stuart Schechter <stuart.schechter@gmail.com>",
   "license": "MIT",
