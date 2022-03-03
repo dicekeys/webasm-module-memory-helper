@@ -1,12 +1,13 @@
 {
   "name": "@dicekeys/webasm-module-memory-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helps TypeScript modules incorporate webasm modules",
   "main": "dist/webasm-module-memory-helper.js",
   "types": "dist/webasm-module-memory-helper.d.ts",
   "scope": "@dicekeys/webasm-module-memory-helper",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
   },
   "files": [
     "/dist"
